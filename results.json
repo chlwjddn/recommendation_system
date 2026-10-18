@@ -1,0 +1,116 @@
+{
+  "ItemKNN_k1": {
+    "recall@10": 0.1751,
+    "ndcg@10": 0.1976,
+    "hit@10": 0.6702,
+    "precision@10": 0.1369
+  },
+  "UserKNN_k1": {
+    "recall@10": 0.1157,
+    "ndcg@10": 0.105,
+    "hit@10": 0.5217,
+    "precision@10": 0.079
+  },
+  "ItemKNN_k5": {
+    "recall@10": 0.2068,
+    "ndcg@10": 0.2322,
+    "hit@10": 0.7338,
+    "precision@10": 0.1592
+  },
+  "UserKNN_k5": {
+    "recall@10": 0.1931,
+    "ndcg@10": 0.1993,
+    "hit@10": 0.7073,
+    "precision@10": 0.1353
+  },
+  "ItemKNN_k10": {
+    "recall@10": 0.2316,
+    "ndcg@10": 0.2527,
+    "hit@10": 0.7741,
+    "precision@10": 0.1748
+  },
+  "UserKNN_k10": {
+    "recall@10": 0.218,
+    "ndcg@10": 0.2373,
+    "hit@10": 0.7455,
+    "precision@10": 0.1597
+  },
+  "ItemKNN_k100": {
+    "recall@10": 0.247,
+    "ndcg@10": 0.2834,
+    "hit@10": 0.7847,
+    "precision@10": 0.1931
+  },
+  "UserKNN_k100": {
+    "recall@10": 0.2442,
+    "ndcg@10": 0.2873,
+    "hit@10": 0.7805,
+    "precision@10": 0.1885
+  },
+  "ItemKNN_k500": {
+    "recall@10": 0.2354,
+    "ndcg@10": 0.2744,
+    "hit@10": 0.7561,
+    "precision@10": 0.1807
+  },
+  "UserKNN_k500": {
+    "recall@10": 0.2123,
+    "ndcg@10": 0.2472,
+    "hit@10": 0.7444,
+    "precision@10": 0.1619
+  },
+  "BPR_emb32": {
+    "recall@10": 0.0164,
+    "ndcg@10": 0.0236,
+    "hit@10": 0.1442,
+    "precision@10": 0.0177
+  },
+  "BPR_emb64": {
+    "recall@10": 0.0196,
+    "ndcg@10": 0.0209,
+    "hit@10": 0.1622,
+    "precision@10": 0.0176
+  },
+  "BPR_emb128": {
+    "recall@10": 0.0317,
+    "ndcg@10": 0.0401,
+    "hit@10": 0.2195,
+    "precision@10": 0.0253
+  },
+  "BPR_emb256": {
+    "recall@10": 0.0167,
+    "ndcg@10": 0.0227,
+    "hit@10": 0.1654,
+    "precision@10": 0.0196
+  },
+  "BPR_reg0.01": {
+    "recall@10": 0.0168,
+    "ndcg@10": 0.0222,
+    "hit@10": 0.1538,
+    "precision@10": 0.0194
+  },
+  "BPR_reg0.1": {
+    "recall@10": 0.0196,
+    "ndcg@10": 0.0209,
+    "hit@10": 0.1622,
+    "precision@10": 0.0176
+  },
+  "BPR_reg0.5": {
+    "recall@10": 0.0207,
+    "ndcg@10": 0.0238,
+    "hit@10": 0.1803,
+    "precision@10": 0.0207
+  },
+  "SLIMElastic": {
+    "recall@10": 0.275,
+    "ndcg@10": 0.3236,
+    "hit@10": 0.8123,
+    "precision@10": 0.2165
+  },
+  "EASE": {
+    "recall@10": 0.2805,
+    "ndcg@10": 0.3295,
+    "hit@10": 0.8197,
+    "precision@10": 0.2206
+  }
+}

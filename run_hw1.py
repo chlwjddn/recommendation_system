@@ -23,7 +23,7 @@ def run(tag, model, **params):
 ks = [1, 5, 10, 100, 500]
 for k in ks:
     run(f"ItemKNN_k{k}", "ItemKNN", k=k)
-    run(f"UserKNN_k{k}", "ItemKNN", k=k, method="user")
+    run(f"UserKNN_k{k}", "ItemKNN", k=k, knn_method="user")
 
 fig, axes = plt.subplots(1, len(METRICS), figsize=(16, 3.5))
 for ax, m in zip(axes, METRICS):
@@ -37,9 +37,9 @@ plt.tight_layout(); plt.savefig("q1_knn.png", dpi=150)
 embs = [32, 64, 128, 256]
 regs = [0.01, 0.1, 0.5]
 for e in embs:
-    run(f"BPR_emb{e}", "BPR", embedding_size=e, reg_lambda=0.1)
+    run(f"BPR_emb{e}", "BPR", embedding_size=e, weight_decay=0.1)
 for r in regs:
-    run(f"BPR_reg{r}", "BPR", embedding_size=64, reg_lambda=r)
+    run(f"BPR_reg{r}", "BPR", embedding_size=64, weight_decay=r)
 
 fig, axes = plt.subplots(1, 2, figsize=(9, 3.5))
 axes[0].plot(embs, [results[f"BPR_emb{e}"]["ndcg@10"] for e in embs], marker="o")
